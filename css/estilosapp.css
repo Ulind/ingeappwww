@@ -1,0 +1,122 @@
+#ljogin, #nuevoticket {
+
+	background:url('../img/bg.jpg')
+
+}
+
+
+
+
+
+h1 span{
+
+	display: none;
+
+}
+
+
+
+.ui-bar-a {
+
+	/*background: none;*/
+
+	border:none;
+
+}
+
+
+
+.imgwrapper {
+
+	text-align: center;
+
+}
+
+
+
+#nuevoticket #imgwrapper {
+
+	margin-top: -25px;
+
+}
+
+
+
+label {
+
+	display: none;
+
+}
+
+
+
+input {
+
+	background-color: #ccdfcb;
+
+	font-style: italic;
+
+}
+
+
+
+submit {
+
+	background: #e43c33;
+
+}
+
+
+
+.ui-body-c h2{
+
+	color: #e43c33;
+
+	border: none;
+
+	text-shadow: 0 1px 0 #000;
+
+	font-size: 1.4em;
+
+	text-align: center;
+
+}
+
+
+
+#recupass, #nuevoticket h2 {
+
+	margin: 10px 0 20px 0;
+
+}
+
+
+
+#recupass, #nuevoticket p {
+
+	color: #fff;
+
+	text-shadow: 0 1px 0 #000;
+
+	font-size: 0.8em;
+
+	text-align: center;
+
+	margin-bottom: 40px;
+
+}
+
+
+
+#nuevoticket textarea {
+
+	font-size: 0.9em;
+
+}
+
+ .ui-content .ui-listview
+    {
+        margin-top: 5px;
+        margin-bottom: 5px;
+	clear:both;
+    } 

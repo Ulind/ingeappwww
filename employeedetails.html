@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="css/estilosapp.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="jquery-mobile.js"></script>
+
+
+</head>
+
+<body>
+
+  <div id="detailsPage" data-role="page" data-add-back-btn="true">
+
+    <div data-role="header">
+      <h1>Realice consulta</h1>
+    </div>
+
+    <div data-role="content"> 
+
+      <img id="employeePic"/>
+      <div id="employeeDetails">
+        <h3 id="fullName"></h3>
+        <ul id="mensajeList" data-role="listview"></ul>
+
+        <form id="mensajeform" > <!--action="#gracias" data-ajax="false"-->
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+          <input type="submit" value="ENVIAR" id="botonLogin">
+        </form> 
+      </div>
+
+      <ul id="actionList" data-role="listview" data-inset="true"></ul>
+
+    </div>
+
+  </div>
+
+<div id="gracias" data-role="page" data-add-back-btn="true">
+    <div data-role="header">
+      <h1>Consulta enviada</h1>
+    </div>
+    <div data-role="content"> 
+      <p>Le responderemos a la brevedad. Gracias.</p>
+      <a href="index.html#employeeListPage">Ir a inicio</a>
+  </div>
+</div>
+
+
+
+
+
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/mensajeslist.js"></script>
+<script src="js/reportlist.js"></script>
+
+
+<script>
+
+
+
+</script>
+
+
+</html>

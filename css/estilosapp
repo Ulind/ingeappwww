@@ -1,0 +1,10 @@
+#formulario {
+	background:url('../img/bg.jpg')
+}
+
+
+#header h1 {
+	display:block;
+	background-image:url('../img/logo.png');
+}
+

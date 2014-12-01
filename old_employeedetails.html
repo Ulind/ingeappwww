@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="css/estilosapp.css" />
+
+</head>
+    
+<body>
+
+<div id="detailsPage" data-role="page" data-add-back-btn="true">
+
+	<div data-role="header">
+		<h1>Realice consulta</h1>
+	</div>
+
+  <div data-role="content"> 
+
+  <img id="employeePic"/>
+	<div id="employeeDetails">
+       <h3 id="fullName"></h3>
+       <ul id="mensajeList" data-role="listview"></ul>
+
+       <form id="mensajeform" >
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+          <input type="submit" value="ENVIAR" id="botonLogin">
+      </form> 
+  </div>
+
+  <ul id="actionList" data-role="listview" data-inset="true"></ul>
+
+  </div>
+
+</div>
+
+<div id="gracias" data-role="page" data-add-back-btn="true">
+<p>Le responderemos a la brevedad. Gracias.</p>
+</div>
+
+
+
+
+
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/mensajeslist.js"></script>
+<script src="js/reportlist.js"></script>
+
+
+<script>
+
+$("#mensajeform").on("submit",function (){
+e.preventDefault();
+  alert('Handler for .submit() called.');
+});
+
+
+$('#mensajesform').submit(function() {
+  // recolecta los valores que inserto el usuario
+alert("so boton")
+  var mensajeUsuario = $("#mensaje").val()
+  archivoMensaje = "../services/mensaje.php?jsoncallback=?&id="+id
+
+   alert (mensajeUsuario)
+  $.getJSON( archivoMensaje, { mensaje:mensajeUsuario})
+  .done(function(respuestaServer) {
+
+  if(respuestaServer.validacion == "ok"){
+  /// si la validacion es correcta, muestra la pantalla "home"
+    alert("la")
+    }else{
+  /// ejecutar una conducta cuando la validacion falla
+      alert(respuestaServer.mensaje + "\nTipo de consulta: " + respuestaServer.hora + "\n" +respuestaServer.generador)
+  }
+  })
+  return false;
+  })
+
+</script>
+
+
+</html>
