@@ -7,7 +7,7 @@ $('#detailsPage').live('pageshow', function(event) {
 
 function displayEmployee(data) {
 	var employee = data.item;
-	$('#employeePic').attr('src', '../../fotos/' + employee.ImgProducto);
+	$('#employeePic').attr('src', 'http://ingesis.info/fotos/' + employee.ImgProducto);
 	$('#fullName').text(employee.NombreProductoES);
 	
 	$('#actionList').listview('refresh');
