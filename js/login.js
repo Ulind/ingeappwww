@@ -2,7 +2,7 @@
   // recolecta los valores que inserto el usuario
 alert("aca tambie entro, ojo")
   var mensajeUsuario = $("#mensaje").val()
-  archivoMensaje = "../services/mensaje.php?jsoncallback=?"+id
+  archivoMensaje = "http://ingesis.info/app/services/mensaje.php?jsoncallback=?"+id
 
    alert (mensajeUsuario)
   $.getJSON( archivoMensaje, { mensaje:mensajeUsuario})
